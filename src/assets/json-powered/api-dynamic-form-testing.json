@@ -1,43 +1,41 @@
 [
     {
-    "fieldGroupClassName": "d-flex",
-    "fieldGroup": [
-        {
-        "key": "firstName",
-        "type": "input",
-        "className": "flex-fill flex-grow-2 pe-2", 
-        "props": {
-            "appearance": "outline",
-            "label": "First Name",
-            "maxLength": 10,
-            "minLength": 5
-        }
-        },
-        {
-        "key": "lastName",
-        "type": "input",
-        "className": "flex-fill flex-grow-1 px-2",
-        "props": {
-        "appearance": "outline",
-            "label": "Last Name",
-            "required": true
-        }
-
-        }
-    ]
+        "fieldGroupClassName": "d-flex",
+        "fieldGroup": [
+            {
+                "key": "firstName",
+                "type": "input",
+                "className": "flex-fill flex-grow-2 pe-2", 
+                "props": {
+                    "appearance": "outline",
+                    "label": "First Name",
+                    "maxLength": 10,
+                    "minLength": 5
+                }
+            },
+            {
+                "key": "lastName",
+                "type": "input",
+                "className": "flex-fill flex-grow-1 px-2",
+                "props": {
+                    "appearance": "outline",
+                    "label": "Last Name",
+                    "required": true
+                }
+            }
+        ]
     },
     {
         "fieldGroupClassName": "d-flex",
         "fieldGroup": [
             {
                 "id": 500004,
-                "key": "MAINXXXCLASSFICATION",
+                "key": "MAINCLASSIFICATION",
                 "type": "autocompleteem",
                 "className": "flex-fill flex-grow-2 pe-2", 
                 "props": {
                     "id": 0,
-                    
-                    "label": "تصنيف رئيسي",
+                    "label": "Product Category",
                     "appearance": "outline",
                     "prefixIcon": "search",
                     "floatLabel": "always",
@@ -49,39 +47,39 @@
                     "options": [
                         {
                             "id": 6100,
-                            "name": "يوجد مشكلة تخص القسم"
+                            "name": "Electronics"
                         },
                         {
                             "id": 6101,
-                            "name": "المشكلة تابعة لقسم آخر في شركة المياه الوطنية"
+                            "name": "Fashion"
                         },
                         {
                             "id": 6102,
-                            "name": "المشكلة غير تابع لشركة المياه الوطنية"
+                            "name": "Home Appliances"
                         },
                         {
                             "id": 6103,
-                            "name": "بلاغ مكرر متلاصق مع بلاغ اخر يتم التعامل معه"
+                            "name": "Books"
                         },
                         {
                             "id": 6104,
-                            "name": "خلل داخلي في عقار العميل"
+                            "name": "Beauty Products"
                         },
                         {
                             "id": 6105,
-                            "name": "تصنيف خاطئ"
+                            "name": "Sports Equipment"
                         },
                         {
                             "id": 6106,
-                            "name": "لا يمكن التعامل مع البلاغ مطلقاً"
+                            "name": "Toys & Games"
                         },
                         {
                             "id": 6107,
-                            "name": "لا يمكن التعامل مع البلاغ حاليا ، يحتاج الى اعادة جدولة"
+                            "name": "Automotive"
                         },
                         {
                             "id": 6108,
-                            "name": "لا يوجد مشكلة في الموقع"
+                            "name": "Groceries"
                         }
                     ],
                     "valueProp": "id",
@@ -112,12 +110,12 @@
             },
             {
                 "id": 500104,
-                "key": "SUBCAasaTEGORY",
+                "key": "SUBCATEGORY",
                 "type": "autocompleteem",
                 "className": "flex-fill flex-grow-1 pe-1", 
                 "props": {
                     "id": 0,
-                    "label": "تصنيف فرعي",
+                    "label": "Subcategory",
                     "required": true,
                     "placeholder": "-",
                     "pattern": "",
@@ -125,107 +123,107 @@
                     "options": [
                         {
                             "id": 6109,
-                            "name": "طفح في شبكة صرف صحي"
+                            "name": "Smartphones"
                         },
                         {
                             "id": 6110,
-                            "name": "هبوط على شبكة صرف صحي نظامية"
+                            "name": "Laptops"
                         },
                         {
                             "id": 6111,
-                            "name": "هبوط على توصيلة صرف صحي غير نظامية"
+                            "name": "Men's Clothing"
                         },
                         {
                             "id": 6112,
-                            "name": "العميل يشتكي من روائح"
+                            "name": "Women's Clothing"
                         },
                         {
                             "id": 6113,
-                            "name": "لا يوجد غطاء منهل"
+                            "name": "Kitchen Appliances"
                         },
                         {
                             "id": 6114,
-                            "name": "مشكلة في الغطاء"
+                            "name": "Furniture"
                         },
                         {
                             "id": 6115,
-                            "name": "عطل في المضخة"
+                            "name": "Cosmetics"
                         },
                         {
                             "id": 6116,
-                            "name": "بلاغ تابع للمياه"
+                            "name": "Skincare"
                         },
                         {
                             "id": 6117,
-                            "name": "تعدي على الشبكة"
+                            "name": "Fitness Equipment"
                         },
                         {
                             "id": 6118,
-                            "name": "تابع للاصول (تحت الانشاء ، غير مكتملة)"
+                            "name": "Outdoor Gear"
                         },
                         {
                             "id": 6119,
-                            "name": "الغطاء يخص مرافق خدمية اخرى"
+                            "name": "Board Games"
                         },
                         {
                             "id": 6120,
-                            "name": "تسرب مياه غسيل"
+                            "name": "Action Figures"
                         },
                         {
                             "id": 6121,
-                            "name": "التسرب يختص بجهات خدمية أخرى (شبكة سيول / شبكة ري/ مياه جوفية/ مياه امطار )"
+                            "name": "Car Accessories"
                         },
                         {
                             "id": 6122,
-                            "name": "بلاغ مكرر متلاصق"
+                            "name": "Motorcycle Gear"
                         },
                         {
                             "id": 6123,
-                            "name": "سدد داخلي تابع للعميل"
+                            "name": "Fresh Produce"
                         },
                         {
                             "id": 6124,
-                            "name": "طفح بيارة"
+                            "name": "Beverages"
                         },
                         {
                             "id": 6125,
-                            "name": "الفاتورة مرتفعة"
+                            "name": "Bakery"
                         },
                         {
                             "id": 6126,
-                            "name": "العداد مغلق"
+                            "name": "Snacks"
                         },
                         {
                             "id": 6127,
-                            "name": "اخرى"
+                            "name": "Dairy"
                         },
                         {
                             "id": 6128,
-                            "name": "لا يوجد بيانات دقيقه للموقع, صعوبة التواصل مع العميل"
+                            "name": "Meat & Poultry"
                         },
                         {
                             "id": 6129,
-                            "name": "لايوجد أي معلومات عن الموقع"
+                            "name": "Seafood"
                         },
                         {
                             "id": 6130,
-                            "name": "بلاغ خارج النطاق الجغرافي للمدينة"
+                            "name": "Frozen Foods"
                         },
                         {
                             "id": 6131,
-                            "name": "مواقع أمنية تحتاج تصريح"
+                            "name": "Canned Goods"
                         },
                         {
                             "id": 6132,
-                            "name": "الحركة المرورية \\ وقت الحظر"
+                            "name": "Organic Products"
                         },
                         {
                             "id": 6133,
-                            "name": "لا يوجد مشكلة"
+                            "name": "Specialty Items"
                         },
                         {
                             "id": 6162,
-                            "name": "تحول الى الوردية اللاحقة "
+                            "name": "Gift Cards"
                         }
                     ],
                     "valueProp": "id",
@@ -256,578 +254,361 @@
             }
         ]
     },
-  {
-      "id": 500004,
-      "key": "MAINCLASSFICATION",
-      "type": "autocompleteem",
-      "className": "col-md-6", 
-      "props": {
-          "id": 0,
-          "label": "تصنيف رئيسي",
-          "appearance": "outline",
-          "prefixIcon": "search",
-          "floatLabel": "always",
-          "prefixText": "+966",
-          "customClass": "my-custom-class",
-          "required": true,
-          "placeholder": "-",
-          "pattern": "",
-          "options": [
-              {
-                  "id": 6100,
-                  "name": "يوجد مشكلة تخص القسم"
-              },
-              {
-                  "id": 6101,
-                  "name": "المشكلة تابعة لقسم آخر في شركة المياه الوطنية"
-              },
-              {
-                  "id": 6102,
-                  "name": "المشكلة غير تابع لشركة المياه الوطنية"
-              },
-              {
-                  "id": 6103,
-                  "name": "بلاغ مكرر متلاصق مع بلاغ اخر يتم التعامل معه"
-              },
-              {
-                  "id": 6104,
-                  "name": "خلل داخلي في عقار العميل"
-              },
-              {
-                  "id": 6105,
-                  "name": "تصنيف خاطئ"
-              },
-              {
-                  "id": 6106,
-                  "name": "لا يمكن التعامل مع البلاغ مطلقاً"
-              },
-              {
-                  "id": 6107,
-                  "name": "لا يمكن التعامل مع البلاغ حاليا ، يحتاج الى اعادة جدولة"
-              },
-              {
-                  "id": 6108,
-                  "name": "لا يوجد مشكلة في الموقع"
-              }
-          ],
-          "valueProp": "id",
-          "labelProp": "name",
-          "parentId": "-1",
-          "disabled": false,
-          "splkp": null,
-          "lookupTable": null,
-          "lookupCodeFieldName": null,
-          "lookupArabicField": null,
-          "lookupLatinField": null,
-          "whereClause": null,
-          "showTime": false,
-          "uploadUrl": null
-      },
-      "expressions": {
-          "model.MAINCLASSFICATION": "field.props.options.find(o=>o.id===model.MAINCLASSFICATION) ? model.MAINCLASSFICATION : null"
-      },
-      "validators": {
-          "validation": [
-              {
-                  "name": "autocomplete-validation"
-              }
-          ]
-      },
-      "fieldArray": null,
-      "hide": null
-  },
-  {
-      "id": 500104,
-      "key": "SUBCATEGORY",
-      "type": "autocompleteem",
-      "props": {
-          "id": 0,
-          "label": "تصنيف فرعي",
-          "required": true,
-          "placeholder": "-",
-          "pattern": "",
-          "appearance": "outline",
-          "options": [
-              {
-                  "id": 6109,
-                  "name": "طفح في شبكة صرف صحي"
-              },
-              {
-                  "id": 6110,
-                  "name": "هبوط على شبكة صرف صحي نظامية"
-              },
-              {
-                  "id": 6111,
-                  "name": "هبوط على توصيلة صرف صحي غير نظامية"
-              },
-              {
-                  "id": 6112,
-                  "name": "العميل يشتكي من روائح"
-              },
-              {
-                  "id": 6113,
-                  "name": "لا يوجد غطاء منهل"
-              },
-              {
-                  "id": 6114,
-                  "name": "مشكلة في الغطاء"
-              },
-              {
-                  "id": 6115,
-                  "name": "عطل في المضخة"
-              },
-              {
-                  "id": 6116,
-                  "name": "بلاغ تابع للمياه"
-              },
-              {
-                  "id": 6117,
-                  "name": "تعدي على الشبكة"
-              },
-              {
-                  "id": 6118,
-                  "name": "تابع للاصول (تحت الانشاء ، غير مكتملة)"
-              },
-              {
-                  "id": 6119,
-                  "name": "الغطاء يخص مرافق خدمية اخرى"
-              },
-              {
-                  "id": 6120,
-                  "name": "تسرب مياه غسيل"
-              },
-              {
-                  "id": 6121,
-                  "name": "التسرب يختص بجهات خدمية أخرى (شبكة سيول / شبكة ري/ مياه جوفية/ مياه امطار )"
-              },
-              {
-                  "id": 6122,
-                  "name": "بلاغ مكرر متلاصق"
-              },
-              {
-                  "id": 6123,
-                  "name": "سدد داخلي تابع للعميل"
-              },
-              {
-                  "id": 6124,
-                  "name": "طفح بيارة"
-              },
-              {
-                  "id": 6125,
-                  "name": "الفاتورة مرتفعة"
-              },
-              {
-                  "id": 6126,
-                  "name": "العداد مغلق"
-              },
-              {
-                  "id": 6127,
-                  "name": "اخرى"
-              },
-              {
-                  "id": 6128,
-                  "name": "لا يوجد بيانات دقيقه للموقع, صعوبة التواصل مع العميل"
-              },
-              {
-                  "id": 6129,
-                  "name": "لايوجد أي معلومات عن الموقع"
-              },
-              {
-                  "id": 6130,
-                  "name": "بلاغ خارج النطاق الجغرافي للمدينة"
-              },
-              {
-                  "id": 6131,
-                  "name": "مواقع أمنية تحتاج تصريح"
-              },
-              {
-                  "id": 6132,
-                  "name": "الحركة المرورية \\ وقت الحظر"
-              },
-              {
-                  "id": 6133,
-                  "name": "لا يوجد مشكلة"
-              },
-              {
-                  "id": 6162,
-                  "name": "تحول الى الوردية اللاحقة "
-              }
-          ],
-          "valueProp": "id",
-          "labelProp": "name",
-          "parentId": "500004",
-          "disabled": false,
-          "splkp": null,
-          "lookupTable": null,
-          "lookupCodeFieldName": null,
-          "lookupArabicField": null,
-          "lookupLatinField": null,
-          "whereClause": null,
-          "showTime": false,
-          "uploadUrl": null
-      },
-      "expressions": {
-          "model.SUBCATEGORY": "field.props.options.find(o=>o.id===model.SUBCATEGORY) ? model.SUBCATEGORY : null"
-      },
-      "validators": {
-          "validation": [
-              {
-                  "name": "autocomplete-validation"
-              }
-          ]
-      },
-      "fieldArray": null,
-      "hide": null
-  },
-  {
-      "id": 500404,
-      "key": "ACTIONTAKEN",
-      "type": "select",
-      "props": {
-          "id": 0,
-          "label": "نتيجة النشاط",
-          "required": true,
-          "appearance": "outline",
-
-          "placeholder": "-",
-          "pattern": "",
-          "options": [
-              {
-                  "id": 6134,
-                  "name": "تم معالجة الطفح"
-              },
-              {
-                  "id": 6135,
-                  "name": "عالق في الخط يحول الى قسم الكميرا"
-              },
-              {
-                  "id": 6136,
-                  "name": "تحويل الى قسم الاصلاحات"
-              },
-              {
-                  "id": 6137,
-                  "name": "تحويل الى قسم الاصلاحات"
-              },
-              {
-                  "id": 6138,
-                  "name": "تحوبل الى قسم المخالفات"
-              },
-              {
-                  "id": 6139,
-                  "name": "تحويل صيانة الشبكات الصرف الصحي"
-              },
-              {
-                  "id": 6140,
-                  "name": " تم تركيب غطاء"
-              },
-              {
-                  "id": 6141,
-                  "name": "تحويل الى قسم الاصلاحات"
-              },
-              {
-                  "id": 6142,
-                  "name": "تحويل الى قسم المضخات"
-              },
-              {
-                  "id": 6143,
-                  "name": "تحويل الى قسم الطوارئ المياه"
-              },
-              {
-                  "id": 6144,
-                  "name": "تحويل للجنة المخالفات"
-              },
-              {
-                  "id": 6145,
-                  "name": "تحويل الى ادارة المشاريع"
-              },
-              {
-                  "id": 6146,
-                  "name": "إقفال البلاغ"
-              },
-              {
-                  "id": 6147,
-                  "name": "تحويل الى قسم التعديات"
-              },
-              {
-                  "id": 6148,
-                  "name": "إقفال البلاغ"
-              },
-              {
-                  "id": 6149,
-                  "name": "إقفال البلاغ"
-              },
-              {
-                  "id": 6150,
-                  "name": "يحول الى قسم التعديات"
-              },
-              {
-                  "id": 6151,
-                  "name": "اقفال البلاغ"
-              },
-              {
-                  "id": 6152,
-                  "name": "يحول الى قسم التعديات"
-              },
-              {
-                  "id": 6153,
-                  "name": "إقفال البلاغ"
-              },
-              {
-                  "id": 6154,
-                  "name": "إقفال البلاغ"
-              },
-              {
-                  "id": 6155,
-                  "name": "إقفال البلاغ"
-              },
-              {
-                  "id": 6156,
-                  "name": "إقفال البلاغ"
-              },
-              {
-                  "id": 6157,
-                  "name": "إقفال البلاغ"
-              },
-              {
-                  "id": 6158,
-                  "name": "إقفال البلاغ"
-              },
-              {
-                  "id": 6159,
-                  "name": "اعادة جدولة"
-              },
-              {
-                  "id": 6160,
-                  "name": "اعادة جدولة"
-              },
-              {
-                  "id": 6161,
-                  "name": "إقفال البلاغ"
-              },
-              {
-                  "id": 6163,
-                  "name": "اعادة جدولة"
-              }
-          ],
-          "valueProp": "id",
-          "labelProp": "name",
-          "parentId": "500104",
-          "multiple": true,
-          "disabled": false,
-          "splkp": null,
-          "lookupTable": null,
-          "lookupCodeFieldName": null,
-          "lookupArabicField": null,
-          "lookupLatinField": null,
-          "whereClause": null,
-          "showTime": false,
-          "uploadUrl": null
-      },
-      "expressions": {
-          "props.description": "field.props.options.find(o=>o.id==model.ACTIONTAKEN) ? field.props.options.find(o=>o.id==model.ACTIONTAKEN).name : null"
-      },
-      "validators": {
-          "validation": [
-              {
-                  "name": "autocomplete-validation"
-              }
-          ]
-      },
-      "fieldArray": null,
-      "hide": null
-  },
-  {
-      "id": 6001,
-      "key": "LOCATIONRELATEDASSET",
-      "type": "input",
-      "className": "col-md-6",
-      "props": {
-          "id": 0,
-          "label": "الموقع والأصل الفعلي على GIS",
-          "required": false,
-          "placeholder": "-",
-          "pattern": "",
-          "options": [],
-          "max": 2500,
-          "disabled": false,
-          "splkp": null,
-          "lookupTable": null,
-          "lookupCodeFieldName": null,
-          "lookupArabicField": null,
-          "lookupLatinField": null,
-          "whereClause": null,
-          "showTime": false,
-          "uploadUrl": null
-      },
-      "expressions": {},
-      "validators": {
-          "validation": []
-      },
-      "fieldArray": null,
-      "hide": null
-  },
-  {
-      "id": 5012,
-      "key": "HOUSECONNECTIONNUMBER",
-      "type": "integer",
-      "props": {
-          "id": 0,
-          "label": "رقم التوصيلة المنزلية",
-          "required": false,
-          "placeholder": " ",
-          "pattern": "",
-          "options": [],
-          "min": 0,
-          "max": 250,
-          "disabled": false,
-          "splkp": null,
-          "lookupTable": null,
-          "lookupCodeFieldName": null,
-          "lookupArabicField": null,
-          "lookupLatinField": null,
-          "whereClause": null,
-          "showTime": false,
-          "uploadUrl": null
-      },
-      "expressions": {},
-      "validators": {
-          "validation": []
-      },
-      "fieldArray": null,
-      "hide": null
-  },
-  {
-      "id": 100809,
-      "key": "ATTACHMENT",
-      "type": "file",
-      "props": {
-          "id": 0,
-          "label": "مرفقات",
-          "required": false,
-          "placeholder": "-",
-          "pattern": "",
-          "options": [],
-          "disabled": false,
-          "splkp": null,
-          "lookupTable": null,
-          "lookupCodeFieldName": null,
-          "lookupArabicField": null,
-          "lookupLatinField": null,
-          "whereClause": null,
-          "showTime": false,
-          "uploadUrl": "https://localhost:7014/api/demo/SubmitFormlyFormFileStream"
-      },
-      "expressions": {},
-      "validators": {
-          "validation": []
-      },
-      "fieldArray": {
-          "validators": {
-              "validation": [
-                  {
-                      "name": "allowed-file-extensions",
-                      "options": {
-                          "allowedFileExtensions": [],
-                          "forbiddenCharacters": null,
-                          "maxFilenameLength": null
-                      }
-                  }
-              ]
-          }
-      },
-      "hide": null
-  },
-  {
-      "id": 5005,
-      "key": "REMARKS",
-      "type": "textarea",
-      "props": {
-          "id": 0,
-          "label": "ملاحظة",
-          "required": false,
-          "placeholder": "-",
-          "pattern": "",
-          "options": [],
-          "max": 2500,
-          "disabled": false,
-          "rows": 5,
-          "splkp": null,
-          "lookupTable": null,
-          "lookupCodeFieldName": null,
-          "lookupArabicField": null,
-          "lookupLatinField": null,
-          "whereClause": null,
-          "showTime": false,
-          "uploadUrl": null
-      },
-      "expressions": {},
-      "validators": {
-          "validation": []
-      },
-      "fieldArray": null,
-      "hide": null
-  },
-  {
-      "id": 5004000,
-      "key": "FBFId",
-      "type": null,
-      "props": {
-          "id": 0,
-          "label": "FBFId",
-          "required": false,
-          "disabled": true,
-          "splkp": null,
-          "lookupTable": null,
-          "lookupCodeFieldName": null,
-          "lookupArabicField": null,
-          "lookupLatinField": null,
-          "whereClause": null,
-          "showTime": false,
-          "uploadUrl": null
-      },
-      "defaultValue": "5004",
-      "fieldArray": null
-  },
-  {
-      "id": 5004111,
-      "key": "PK",
-      "type": null,
-      "props": {
-          "id": 0,
-          "label": "PK",
-          "required": false,
-          "disabled": true,
-          "splkp": null,
-          "lookupTable": null,
-          "lookupCodeFieldName": null,
-          "lookupArabicField": null,
-          "lookupLatinField": null,
-          "whereClause": null,
-          "showTime": false,
-          "uploadUrl": null
-      },
-      "defaultValue": "!!!SPNWCALLDP-1722350383!!!",
-      "fieldArray": null
-  },
-  {
-      "id": 5004222,
-      "key": "TaskCode",
-      "type": null,
-      "props": {
-          "id": 0,
-          "label": "TaskCode",
-          "required": false,
-          "disabled": true,
-          "splkp": null,
-          "lookupTable": null,
-          "lookupCodeFieldName": null,
-          "lookupArabicField": null,
-          "lookupLatinField": null,
-          "whereClause": null,
-          "showTime": false,
-          "uploadUrl": null
-      },
-      "defaultValue": "#TASKCODE#",
-      "fieldArray": null
-  }
+    {
+        "id": 500404,
+        "key": "ACTIONTAKEN",
+        "type": "select",
+        "props": {
+            "id": 0,
+            "label": "Order Status",
+            "required": true,
+            "appearance": "outline",
+            "placeholder": "-",
+            "pattern": "",
+            "options": [
+                {
+                    "id": 6134,
+                    "name": "Processing"
+                },
+                {
+                    "id": 6135,
+                    "name": "Shipped"
+                },
+                {
+                    "id": 6136,
+                    "name": "Delivered"
+                },
+                {
+                    "id": 6137,
+                    "name": "Returned"
+                },
+                {
+                    "id": 6138,
+                    "name": "Cancelled"
+                },
+                {
+                    "id": 6139,
+                    "name": "Refunded"
+                },
+                {
+                    "id": 6140,
+                    "name": "Out for Delivery"
+                },
+                {
+                    "id": 6141,
+                    "name": "Payment Pending"
+                },
+                {
+                    "id": 6142,
+                    "name": "Payment Confirmed"
+                },
+                {
+                    "id": 6143,
+                    "name": "Awaiting Shipment"
+                },
+                {
+                    "id": 6144,
+                    "name": "Order Confirmed"
+                },
+                {
+                    "id": 6145,
+                    "name": "Order Completed"
+                },
+                {
+                    "id": 6146,
+                    "name": "Order Closed"
+                },
+                {
+                    "id": 6147,
+                    "name": "Partial Shipment"
+                },
+                {
+                    "id": 6148,
+                    "name": "Awaiting Pickup"
+                },
+                {
+                    "id": 6149,
+                    "name": "Pickup Completed"
+                },
+                {
+                    "id": 6150,
+                    "name": "Order Pending"
+                },
+                {
+                    "id": 6151,
+                    "name": "Awaiting Restock"
+                },
+                {
+                    "id": 6152,
+                    "name": "Backordered"
+                },
+                {
+                    "id": 6153,
+                    "name": "Awaiting Payment"
+                },
+                {
+                    "id": 6154,
+                    "name": "Payment Failed"
+                },
+                {
+                    "id": 6155,
+                    "name": "Order Held"
+                },
+                {
+                    "id": 6156,
+                    "name": "Awaiting Customer Action"
+                },
+                {
+                    "id": 6157,
+                    "name": "Order Rescheduled"
+                },
+                {
+                    "id": 6158,
+                    "name": "Order Under Review"
+                },
+                {
+                    "id": 6159,
+                    "name": "Order Dispatched"
+                },
+                {
+                    "id": 6160,
+                    "name": "Order Deferred"
+                },
+                {
+                    "id": 6161,
+                    "name": "Order Archived"
+                },
+                {
+                    "id": 6163,
+                    "name": "Order Rescheduled"
+                }
+            ],
+            "valueProp": "id",
+            "labelProp": "name",
+            "parentId": "500104",
+            "multiple": true,
+            "disabled": false,
+            "splkp": null,
+            "lookupTable": null,
+            "lookupCodeFieldName": null,
+            "lookupArabicField": null,
+            "lookupLatinField": null,
+            "whereClause": null,
+            "showTime": false,
+            "uploadUrl": null
+        },
+        "expressions": {
+            "props.description": "field.props.options.find(o=>o.id==model.ACTIONTAKEN) ? field.props.options.find(o=>o.id==model.ACTIONTAKEN).name : null"
+        },
+        "validators": {
+            "validation": [
+                {
+                    "name": "autocomplete-validation"
+                }
+            ]
+        },
+        "fieldArray": null,
+        "hide": null
+    },
+    {
+        "id": 6001,
+        "key": "LOCATIONRELATEDASSET",
+        "type": "input",
+        "className": "col-md-6",
+        "props": {
+            "id": 0,
+            "label": "Location and Asset",
+            "required": false,
+            "appearance": "outline",
+            "placeholder": "-",
+            "pattern": "",
+            "options": [],
+            "max": 2500,
+            "disabled": false,
+            "splkp": null,
+            "lookupTable": null,
+            "lookupCodeFieldName": null,
+            "lookupArabicField": null,
+            "lookupLatinField": null,
+            "whereClause": null,
+            "showTime": false,
+            "uploadUrl": null
+        },
+        "expressions": {},
+        "validators": {
+            "validation": []
+        },
+        "fieldArray": null,
+        "hide": null
+    },
+    {
+        "id": 5012,
+        "key": "HOUSECONNECTIONNUMBER",
+        "type": "integer",
+        "props": {
+            "id": 0,
+            "label": "Customer ID",
+            "required": false,
+            "appearance": "outline",
+            "placeholder": " ",
+            "pattern": "",
+            "options": [],
+            "min": 0,
+            "max": 250,
+            "disabled": false,
+            "splkp": null,
+            "lookupTable": null,
+            "lookupCodeFieldName": null,
+            "lookupArabicField": null,
+            "lookupLatinField": null,
+            "whereClause": null,
+            "showTime": false,
+            "uploadUrl": null
+        },
+        "expressions": {},
+        "validators": {
+            "validation": []
+        },
+        "fieldArray": null,
+        "hide": null
+    },
+    {
+        "id": 100809,
+        "key": "ATTACHMENT",
+        "type": "file",
+        "props": {
+            "id": 0,
+            "label": "Attachments",
+            "required": false,
+            "appearance": "outline",
+            "placeholder": "-",
+            "pattern": "",
+            "options": [],
+            "disabled": false,
+            "splkp": null,
+            "lookupTable": null,
+            "lookupCodeFieldName": null,
+            "lookupArabicField": null,
+            "lookupLatinField": null,
+            "whereClause": null,
+            "showTime": false,
+            "uploadUrl": "https://localhost:7014/api/demo/SubmitFormlyFormFileStream"
+        },
+        "expressions": {},
+        "validators": {
+            "validation": []
+        },
+        "fieldArray": {
+            "validators": {
+                "validation": [
+                    {
+                        "name": "allowed-file-extensions",
+                        "options": {
+                            "allowedFileExtensions": [],
+                            "forbiddenCharacters": null,
+                            "maxFilenameLength": null
+                        }
+                    }
+                ]
+            }
+        },
+        "hide": null
+    },
+    {
+        "id": 5005,
+        "key": "REMARKS",
+        "type": "textarea",
+        "props": {
+            "id": 0,
+            "label": "Remarks",
+            "required": false,
+            "appearance": "outline",
+            "placeholder": "-",
+            "pattern": "",
+            "options": [],
+            "max": 2500,
+            "disabled": false,
+            "rows": 5,
+            "splkp": null,
+            "lookupTable": null,
+            "lookupCodeFieldName": null,
+            "lookupArabicField": null,
+            "lookupLatinField": null,
+            "whereClause": null,
+            "showTime": false,
+            "uploadUrl": null
+        },
+        "expressions": {},
+        "validators": {
+            "validation": []
+        },
+        "fieldArray": null,
+        "hide": null
+    },
+    {
+        "id": 5004000,
+        "key": "FBFId",
+        "type": null,
+        "props": {
+            "id": 0,
+            "label": "FBFId",
+            "required": false,
+            "appearance": "outline",
+            "disabled": true,
+            "splkp": null,
+            "lookupTable": null,
+            "lookupCodeFieldName": null,
+            "lookupArabicField": null,
+            "lookupLatinField": null,
+            "whereClause": null,
+            "showTime": false,
+            "uploadUrl": null
+        },
+        "defaultValue": "5004",
+        "fieldArray": null
+    },
+    {
+        "id": 5004111,
+        "key": "PK",
+        "type": null,
+        "props": {
+            "id": 0,
+            "label": "PK",
+            "required": false,
+            "appearance": "outline",
+            "disabled": true,
+            "splkp": null,
+            "lookupTable": null,
+            "lookupCodeFieldName": null,
+            "lookupArabicField": null,
+            "lookupLatinField": null,
+            "whereClause": null,
+            "showTime": false,
+            "uploadUrl": null
+        },
+        "defaultValue": "!!!SPNWCALLDP-1722350383!!!",
+        "fieldArray": null
+    },
+    {
+        "id": 5004222,
+        "key": "TaskCode",
+        "type": null,
+        "props": {
+            "id": 0,
+            "label": "TaskCode",
+            "required": false,
+            "appearance": "outline",
+            "disabled": true,
+            "splkp": null,
+            "lookupTable": null,
+            "lookupCodeFieldName": null,
+            "lookupArabicField": null,
+            "lookupLatinField": null,
+            "whereClause": null,
+            "showTime": false,
+            "uploadUrl": null
+        },
+        "defaultValue": "#TASKCODE#",
+        "fieldArray": null
+    }
 ]
