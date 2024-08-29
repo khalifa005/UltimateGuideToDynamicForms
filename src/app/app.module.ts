@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FILE_TYPE_CONFIG, FileTypeConfig } from './common/file-type-config';
 import { MatNativeDateModule } from '@angular/material/core';
@@ -20,7 +20,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
-import { MatIconModule } from '@angular/material/icon';
+import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { CustomErrorMessageComponent } from './components/custom-error-message/custom-error-message.component';
 import { FileUploadErrorMessagePipe } from './pipes/file-upload-error-message.pipe';
 import { MatListModule } from '@angular/material/list';
@@ -29,6 +29,8 @@ import { FileInputComponent } from './components/file-input/file-input.component
 import { FileSizePipe } from './pipes/file-size.pipe';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     FormsModule,
     FormlyModule,
     MatFormFieldModule,
@@ -167,5 +171,18 @@ import { MatTooltipModule } from '@angular/material/tooltip';
   }],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+  constructor(
+    matIconRegistry: MatIconRegistry,
+     sanitizer: DomSanitizer) {
+    matIconRegistry.addSvgIconInNamespace('fileType', 'fileDrop', sanitizer.bypassSecurityTrustResourceUrl('assets/svgs/file_copy-24px.svg'));
+    matIconRegistry.addSvgIconInNamespace('fileType', 'file', sanitizer.bypassSecurityTrustResourceUrl('assets/svgs/cloud_done-24px.svg'));
+    matIconRegistry.addSvgIconInNamespace('fileType', 'fileUpload', sanitizer.bypassSecurityTrustResourceUrl('assets/svgs/cloud_upload-24px.svg'));
+    matIconRegistry.addSvgIconInNamespace('fileType', 'fileRemove', sanitizer.bypassSecurityTrustResourceUrl('assets/svgs/clear-24px.svg'));
+
+
+  }
+  
+}
 
