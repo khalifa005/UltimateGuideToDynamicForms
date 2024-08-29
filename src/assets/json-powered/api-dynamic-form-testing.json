@@ -47,7 +47,7 @@
             {
                 "id": 500004,
                 "key": "MAINCLASSIFICATION",
-                "type": "autocompleteem",
+                "type": "autocomplete",
                 "className": "flex-fill flex-grow-2 pe-2", 
                 "props": {
                     "id": 0,
@@ -127,7 +127,7 @@
             {
                 "id": 500104,
                 "key": "SUBCATEGORY",
-                "type": "autocompleteem",
+                "type": "autocomplete",
                 "className": "flex-fill flex-grow-1 pe-1", 
                 "props": {
                     "id": 0,
@@ -629,7 +629,7 @@
     },
     {
         "key": "sportId",
-        "type": "autocompleteem",
+        "type": "autocomplete",
         "props": {
             "label": "Sport Autocomplete",
             "customInput": "test case",
@@ -653,7 +653,7 @@
     },
     {
         "key": "teamId",
-        "type": "autocompleteem",
+        "type": "autocomplete",
         "props": {
             "label": "Team",
             "parentId": "sportId",
@@ -676,7 +676,7 @@
     },
     {
         "key": "playerId",
-        "type": "autocompleteem",
+        "type": "autocomplete",
         "props": {
             "label": "Player",
             "parentId": "teamId",

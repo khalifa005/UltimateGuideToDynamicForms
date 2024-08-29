@@ -18,25 +18,6 @@ form: FormGroup;
 isUpdateMode: boolean = false;
 formJsonFileName = "api-dynamic-form-testing.json"
 model:any= {};
-
-formModelDto = {
-     
-  "TaskTimeID": "1",
-  "StartTime": "2024-06-20T00:00:00.000Z",
-  "PlannedDate": "2024-06-19T21:00:00.000Z",
-  "EndTime": "2024-06-24T21:00:00.000Z",
-  "GVKEY": 3708,
-  "TaskTypeID1": 24,
-  "TaskTypeID2": 24,
-  "TaskTypeID3": 24,
-  "TaskTypeID4": 24,
-  "TaskTypeID5": 24,
-  "FBFID": 5003,
-  "FBFID2": 5003,
-  "StatusFilter": 0,
-  "ShowFilledFBFs": "1"
-};
-
 options: FormlyFormOptions = {
   formState: {
     selectOptionsData: {}
@@ -44,14 +25,12 @@ options: FormlyFormOptions = {
     //we can set dtopdown item here or get them from api 
   },
 };
-
 fields: FormlyFieldConfig[];
 type: string;
 formHeader: string = "Dynamic form title";
 firstModelChange: boolean = true;
 showForm: boolean = false;
 formRandomNumber: number;
-
 
 examples = [
   // 'simple',
@@ -71,7 +50,6 @@ examples = [
   // 'select_alternatives',
 ];
 
-
 constructor(private http: HttpClient) {}
 
 ngOnInit(): void {
@@ -85,25 +63,17 @@ loadSpecificExample() {
   this.options = {};
   
   this.http
-  // .get<FormlyFieldConfig[]>('assets/json-powered/user-form-static.json')
   .get<FormlyFieldConfig[]>(`assets/json-powered/${this.formJsonFileName}`)
-  // .get<FormlyFieldConfig[]>('src/assets/json-powered/user-form.json')
   .subscribe(fields => {
-    // this.fetchSelectOptionsData(fields);
-    //we can all dependent fields here and store them 
-    // this.fields = this.mapFields(fields);
     this.model = {
       "MAINCLASSFICATION": 6100,
       "SUBCATEGORY": 6110,
       "ACTIONTAKEN": "6136,6135",
       "LOCATIONRELATEDASSET": "2",
       "HOUSECONNECTIONNUMBER": "23",
-      "REMARKS": "efsdsddfgdhggfjhv",
-      "REPORTID": 727.0,
-      "PK": "!!!SPNWCALLDP-1722350383!!!",
-      "TASKCODE": "#TASKCODE#"
+      "REMARKS": "some comments",
   };
-  this.mapDropdownOptions(fields); //fake api simulation   
+  this.mapDropdownOptions(fields);    
 
     this.type = "json-powered";
   });

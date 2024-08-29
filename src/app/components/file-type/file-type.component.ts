@@ -3,7 +3,7 @@ import { FieldArrayType, FieldArrayTypeConfig, FormlyFieldProps } from '@ngx-for
 import { SelectedFile } from '../file-input/selected-file';
 
 @Component({
-  selector: 'ngz-formly-material-file-type',
+  selector: 'formly-material-file-type',
   templateUrl: './file-type.component.html',
   styleUrls: ['./file-type.component.scss']
 })

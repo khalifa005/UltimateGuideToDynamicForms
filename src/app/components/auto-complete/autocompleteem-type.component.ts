@@ -6,7 +6,7 @@ import { debounceTime, distinctUntilChanged, map, startWith, switchMap, takeUnti
 import { isNumber, getItemsByArrayNameKeyword } from '../../common/helpers-function';
 
 @Component({
-  selector: 'formly-autocompleteem-type',
+  selector: 'formly-autocomplete-type',
   styleUrls: ['./autocomplete-type.component.scss'],
   template: `
 
@@ -30,7 +30,7 @@ import { isNumber, getItemsByArrayNameKeyword } from '../../common/helpers-funct
 `,
 })
 
-export class AutocompleteemTypeComponent extends FieldType<FieldTypeConfig> implements OnInit, OnDestroy  {
+export class AutocompleteTypeComponent extends FieldType<FieldTypeConfig> implements OnInit, OnDestroy  {
   filter!: Observable<any>;
   private destroy$: Subject<void> = new Subject<void>();
 

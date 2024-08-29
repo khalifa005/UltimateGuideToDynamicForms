@@ -8,7 +8,7 @@ import { FileApiService } from 'src/app/common/fileApiService';
 import { FILE_TYPE_CONFIG, FileTypeConfig } from 'src/app/common/file-type-config';
 
 @Component({
-  selector: 'ngz-formly-material-file-upload',
+  selector: 'formly-material-file-upload',
   templateUrl: './file-upload.component.html',
   styleUrls: ['./file-upload.component.scss'],
   providers: [FileUploadService]

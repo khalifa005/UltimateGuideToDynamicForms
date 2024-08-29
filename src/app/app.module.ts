@@ -9,7 +9,6 @@ import { fieldMatchValidator, IpValidator, dateFutureValidator, timeFutureValida
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { FormlyMatDatepickerModule } from '@ngx-formly/material/datepicker';
 import { FileTypeValidationMessages } from './common/file-type-validation-messages';
-import { AutocompleteemTypeComponent } from './components/auto-complete/autocompleteem-type.component';
 import { FileTypeComponent } from './components/file-type/file-type.component';
 import { AutoCompleteExtension } from './common/helpers-function';
 import { ArrayTypeComponent } from './components/extra/array.type';
@@ -31,6 +30,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AutocompleteTypeComponent } from './components/auto-complete/autocompleteem-type.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ArrayTypeComponent,
     ObjectTypeComponent,
     MultiSchemaTypeComponent,
-    AutocompleteemTypeComponent,
+    AutocompleteTypeComponent,
     FileTypeComponent,
     CustomErrorMessageComponent,
     FileUploadErrorMessagePipe,
@@ -142,8 +142,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
           { name: 'object', component: ObjectTypeComponent },
           { name: 'multischema', component: MultiSchemaTypeComponent },
           {
-            name: 'autocompleteem',
-            component: AutocompleteemTypeComponent,
+            name: 'autocomplete',
+            component: AutocompleteTypeComponent,
             wrappers: ['form-field'],
           },
           { name: 'file',

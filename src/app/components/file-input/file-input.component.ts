@@ -3,7 +3,7 @@ import { SelectedFile } from './selected-file';
 import { FILE_TYPE_CONFIG, FileTypeConfig } from 'src/app/common/file-type-config';
 
 @Component({
-  selector: 'ngz-formly-material-file-input',
+  selector: 'formly-material-file-input',
   templateUrl: './file-input.component.html',
   styleUrls: ['./file-input.component.scss']
 })
