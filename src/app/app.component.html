@@ -14,8 +14,8 @@
         </div>
 
         <!-- Centering the pre element within the card -->
-        <div class="d-flex justify-content-center mt-3">
-          <pre *ngIf="model">{{model | json}}</pre>
+        <div class="d-flex justify-content-center mt-4">
+          <pre *ngIf="model" class="bg-dark text-white p-3 rounded">{{model | json}}</pre>
         </div>
       </div>
     </div>
