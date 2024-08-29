@@ -1,0 +1,27 @@
+ <ng-container *ngIf="control && control.errors && (control.dirty || control.touched)">
+    <ng-container *ngFor="let errorKey of objectKeys(control.errors)">
+      <!-- {{ getErrorMessage(errorKey, control.errors[errorKey]) }} -->
+      {{ errorKey | fileUploadErrorMessage: control.errors[errorKey] }}
+
+      <hr/>
+    </ng-container>
+  </ng-container>
+
+  
+  <ng-container *ngIf="control && control.controls?.length && (control.dirty || control.touched)">
+
+    <ng-container *ngFor="let subControl  of control.controls; let i = index ">
+    
+      <ng-container *ngIf="subControl && subControl.errors">
+        <ng-container *ngFor="let errorKey of objectKeys(subControl.errors)">
+          <!-- {{ getErrorMessage(errorKey, subControl.errors[errorKey]) }} -->
+          {{ errorKey | fileUploadErrorMessage: subControl.errors[errorKey] }}
+
+          <hr/>
+        </ng-container>
+      </ng-container>
+      
+    </ng-container>
+
+  </ng-container>
+  
