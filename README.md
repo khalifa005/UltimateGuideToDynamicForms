@@ -47,6 +47,8 @@ Handling files is a core feature, with components and services dedicated to sele
 ### Custom Error Handling
 Custom error handling is an integral part of the project, with dedicated components to manage and display error messages based on validation rules defined in the common utilities.
 
+![Dynamic Form Example](assets/images/Ultimate Guide To Dynamic Forms2.png.png)
+
 ## Getting Started
 
 ### Development Server
